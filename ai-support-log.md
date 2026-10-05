@@ -28,3 +28,7 @@ Không dùng phần do Codex ghi để thay trải nghiệm/reflection của ng�
 ## Cập nhật chốt Chặng 1–3 — 05/10/2026
 
 Dũng cung cấp bản tổng hợp nhóm có evidence An. Codex cập nhật hypothesis sang truy cập lại ý/nguồn, giữ phản chứng An-P01/SV2; thay B hỏi đáp bằng tìm note theo ý nhớ; hoàn thiện Human–AI decisions cho A/B/C. Evidence An dẫn qua bản tổng hợp chưa kiểm transcript gốc. Không nhận nhầm An-P01 và Dũng-P01 là cùng người. Prototype/test plan cũ được đánh dấu chưa khớp; chưa build/test lại. Phân công vẫn đề xuất; không tạo feedback hoặc quyết định sau test.
+
+## Hoàn thiện theo prototype Lovable hiện tại
+
+Người học xác nhận hoàn thành build và cung cấp link Lovable. Codex giữ nguyên ứng dụng, kiểm A mở nguồn/B tìm mô tả và chuẩn bị B ở Lab; cập nhật fixture 4 note, nhãn nguồn/AI mô phỏng, link A/B/C, kịch bản test, mẫu An/Khánh và checklist. Đây là kiểm tra agent, không phải ba user feedback. Dũng chưa cung cấp prompt Lovable, ownership hoặc phần tự sửa; reflection cần dữ liệu cá nhân. Phần lịch sử prototype precision/recall giữ nguyên, không dùng làm bản chính.

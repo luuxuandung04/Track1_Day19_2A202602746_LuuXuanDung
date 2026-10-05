@@ -28,20 +28,20 @@ Chọn #7 → A; #10 → B; #1 thích nghi sang gom note khi quay lại Lab → 
 | Situation | Đang làm Lab, cần ý đã học, không nhớ buổi/slide |
 | Task | Tìm ý “làm rất tốt một thứ không ai cần”, biết nguồn, tự viết một câu có dẫn nguồn vào nháp Lab |
 | Desired outcome | Câu nháp đúng ý học liệu và có nguồn buổi/slide/mốc video |
-| Fixture | 3 buổi Day15–17, 4 slide, 5 note mẫu theo từ khóa; một note không nguồn. Đây là kế hoạch fixture, chưa có bộ dữ liệu đã xác minh. |
-| Chung ~70% | Kho dữ liệu, context Lab, thẻ note/nguồn, phần nháp, chèn nguồn và undo |
+| Fixture | Fixture hiện tại: 4 note trong Design the Experiment; 3 note có nguồn minh họa Slide 5/6/9, 1 note thiếu nguồn. Kho chung không tương ứng kế hoạch 3 buổi/5 note trước đây. |
+| Chung context/content | Kho 4 note, cùng Lab, thẻ note/nguồn, phần nháp và sao chép dẫn nguồn; undo chưa kiểm chứng |
 
 ## Ba cơ chế
 
 | Thành phần | A — Gom note, tự tìm | B — Tìm note theo ý nhớ | C — Chủ động gom note liên quan |
 |---|---|---|---|
-| Mechanism | Tìm từ khóa trên note/slide trong một nơi | AI đối chiếu mô tả với note, đưa 2–3 ứng viên nguyên bản; hỏi thu hẹp khi cần | Mở Lab, AI đề xuất sẵn note liên quan context kèm lý do |
+| Mechanism | Tìm từ khóa trong note; mở slide nguồn minh họa từ kết quả | AI đối chiếu mô tả với note, đưa 2–3 ứng viên nguyên bản; hỏi thu hẹp khi cần | Mở Lab, AI đề xuất sẵn note liên quan context kèm lý do |
 | User | Gõ từ khóa, đọc, mở nguồn, tự viết câu và chèn nguồn | Mô tả ý nhớ, chọn note, đối chiếu nguồn, tự viết và chèn nguồn | Duyệt/giữ/bỏ note đề xuất, mở nguồn, tự viết câu và chèn nguồn |
 | AI | Không suy luận; khớp từ khóa | Tìm theo nghĩa/xếp ứng viên; không giảng giải hay viết câu hộ | Chọn/gom note theo context; không tự sửa nháp hoặc tạo kiến thức |
 | Trigger | User chủ động tìm | User chủ động mô tả | Hệ thống kích hoạt khi mở Lab; user có thể tắt |
 | Trade-off | Control cao, có thể đủ; cần nhớ từ khóa | Hữu ích khi quên từ khóa; có thể ghép nhầm và cần kiểm tra | Có thể giảm công tìm, chưa đo; có thể sai/nhiễu hoặc làm user bỏ qua kiểm tra |
 
-Ví dụ B: user nhập “Mình nhớ ý làm sản phẩm tốt nhưng chẳng ai cần”; AI trả các note gốc từ fixture, lý do khớp và nguồn có thật. Không tạo nguồn Day/slide khi chưa có dữ liệu. Note thiếu nguồn giữ nhãn “Chưa gắn nguồn”; không dùng làm dẫn chứng đã xác minh.
+Ví dụ B: user nhập “Mình nhớ ý làm sản phẩm tốt nhưng chẳng ai cần”; AI trả các note gốc từ fixture, lý do khớp và nguồn minh họa có nhãn rõ. Không tạo nguồn Day/slide khi chưa có dữ liệu. Note thiếu nguồn giữ nhãn “Chưa gắn nguồn”; không dùng làm dẫn chứng đã xác minh.
 
 ## Distance check
 
@@ -57,11 +57,11 @@ Phân công **đề xuất, chưa xác nhận**: A — An; B — Dũng; C — Kh
 
 | Decision | A | B | C |
 |---|---|---|---|
-| Expectation | Tìm theo từ khóa trong kho note/slide | Tìm note của bạn từ ý bạn nhớ; kết quả là ứng viên | Gợi ý note có thể liên quan Lab; không tự đưa vào bài |
+| Expectation | Tìm theo từ khóa trong kho note | Tìm note của bạn từ ý bạn nhớ; kết quả là ứng viên | Gợi ý note có thể liên quan Lab; không tự đưa vào bài |
 | Role & agency | User chọn, kiểm nguồn, viết; hệ thống khớp chữ | AI xếp ứng viên; user quyết định note đúng và câu viết | AI khởi tạo danh sách; user giữ/bỏ và quyết định dùng |
 | Act / Ask / Don't Act | Act tìm sau thao tác user; Don't Act suy diễn | Act tìm khi được yêu cầu; Ask khi nhiều cách hiểu; Don't Act trả lời kiến thức ngoài note | Act gợi ý lúc mở Lab nếu bật; Don't Act tự chèn/sửa bài; tắt thì dừng |
 | Capability/limit | Không có kết quả có thể do khác từ khóa | Không đảm bảo ứng viên đúng ý; không tìm thấy thì báo, không bịa đáp án | Context có thể thiếu; gợi ý có thể không phù hợp |
-| Evidence | Note gốc, vị trí khớp, nguồn có thật | Note gốc, lý do khớp mô tả, nguồn có thật | Note gốc, lý do liên quan task, nguồn có thật |
+| Evidence | Note gốc, vị trí khớp, nguồn minh họa có nhãn rõ | Note gốc, lý do khớp mô tả, nguồn minh họa có nhãn rõ | Note gốc, lý do liên quan task, nguồn minh họa có nhãn rõ |
 | Uncertainty | Note không nguồn có nhãn; không tự gắn | “Có thể phù hợp”, nhiều ứng viên; không phần trăm chắc chắn giả | “Có thể liên quan”; lý do/giới hạn thay điểm tin cậy giả |
 | Control | Sửa từ khóa, bỏ kết quả, tự chọn/chèn nguồn, undo | Sửa mô tả, loại ứng viên, hỏi thu hẹp, chuyển tìm từ khóa, undo | Giữ/bỏ, tắt panel, mở tìm chủ động, undo |
 | Recovery | Không thấy → đổi từ khóa/duyệt kho note | Sai/không thấy → mô tả lại hoặc A; không thêm kiến thức để lấp | Sai/nhiễu → dismiss/tắt, quay A hoặc B; nháp hiện tại được giữ |
@@ -72,3 +72,10 @@ Critical interaction: tìm/chọn evidence rồi tự dùng vào nháp. Hậu qu
 ## Gates 2–3 — đối chiếu tài liệu
 
 Gate 2: cùng contract, khác cơ chế/trigger. Gate 3: có expectation, agency, evidence/uncertainty và recovery. Chưa coi prototype test-ready hoặc coach đã chấm đạt; phải thể hiện decisions này khi build chặng 4.
+
+
+## Đối chiếu implementation Lovable — giữ nguyên prototype
+
+[A — Tự tìm](https://id-preview--ef1fd8a5-1c22-415d-9e3a-b01bbca80717.lovable.app/) · [B — Note nhanh & tìm kết hợp](https://id-preview--ef1fd8a5-1c22-415d-9e3a-b01bbca80717.lovable.app/prototype-b) · [C — Chủ động gom](https://id-preview--ef1fd8a5-1c22-415d-9e3a-b01bbca80717.lovable.app/prototype-c)
+
+B hiện mang tên “Note nhanh & tìm kết hợp”, có tab từ khóa/mô tả và note nhanh trên slide. Task test chính chỉ dùng tìm lại note; không đổi prototype. B mặc định mở slide, facilitator chuẩn bị Bài Lab trước lượt để cùng context A/C. Đây là khác biệt entry point và feature bổ sung cần ghi trong giới hạn so sánh. Không khẳng định mọi decision thiết kế (undo/reset/hỏi thu hẹp) đã được implement. Nút hiện thấy là sao chép nguồn; user tự đưa nguồn vào nháp. Nguồn minh họa không phải trích dẫn tài liệu thật.

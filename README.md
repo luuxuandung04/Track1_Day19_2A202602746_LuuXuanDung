@@ -1,6 +1,6 @@
 # Track1_Day19_2A202602746_LuuXuanDung
 
-Bản chốt tài liệu đến **Chặng 3** — 05/10/2026. Tên Day19 theo yêu cầu Dũng; đề VLearn buổi Day18+19 ghi Day18, cần đối chiếu trước nộp.
+Tài liệu đã cập nhật **Chặng 1–5**, bộ ghi nhận Chặng 6 sẵn dùng — 05/10/2026. Tên Day19 theo yêu cầu Dũng; đề VLearn buổi Day18+19 ghi Day18, cần đối chiếu trước nộp.
 
 ## 1. Thông tin cá nhân và nhóm
 
@@ -26,17 +26,19 @@ User ở cả ba chọn note, kiểm nguồn và tự viết câu có dẫn ngu�
 
 [Chặng 2–3: Design Sheet và Human–AI Decision Table](three-option-design-sheet.md).
 
-**Prototype hiện có và test-plan cũ chưa khớp thiết kế đã chốt:** chúng dùng task tạo note precision/recall. Cần cập nhật trong chặng 4–5 trước khi test, không coi chúng đã đạt gate 4. Xem [trạng thái prototype](prototype-link.md).
+Prototype chính là bản Lovable người học cung cấp, giữ nguyên theo yêu cầu. [A — Tự tìm](https://id-preview--ef1fd8a5-1c22-415d-9e3a-b01bbca80717.lovable.app/) · [B — Note nhanh & tìm kết hợp](https://id-preview--ef1fd8a5-1c22-415d-9e3a-b01bbca80717.lovable.app/prototype-b) · [C — Chủ động gom](https://id-preview--ef1fd8a5-1c22-415d-9e3a-b01bbca80717.lovable.app/prototype-c)
+
+B có note nhanh ngoài task; chuẩn bị B ở Bài Lab trước lượt test. Fixture 4 note và nguồn minh họa được đồng bộ với tài liệu. Prototype precision/recall cục bộ là lịch sử, không dùng nộp. Xem [Prototype](prototype-link.md) và [Kịch bản test đã chuẩn bị](test-plan.md).
 
 ## 4. Đóng góp cá nhân
 
-Dũng cung cấp bản tổng hợp nhóm, yêu cầu đổi B và chốt tài liệu đến chặng 3. Codex biên tập repo, cập nhật B và hoàn thiện bảng Human–AI. Phân công A–An/B–Dũng/C–Khánh vẫn là đề xuất chưa xác nhận; chưa ghi việc AI tạo thành việc cá nhân đã thực hiện.
+Dũng cung cấp bản tổng hợp nhóm, yêu cầu đổi B, xác nhận đã làm xong chặng 4 và gửi prototype Lovable; yêu cầu giữ nguyên prototype. Codex biên tập repo, cập nhật B và hoàn thiện bảng Human–AI. Phân công A–An/B–Dũng/C–Khánh vẫn là đề xuất chưa xác nhận; chưa ghi việc AI tạo thành việc cá nhân đã thực hiện.
 
 Phần Dũng tự bổ sung sau khi làm: owner option, chỉnh sửa thực tế, shared artifact, facilitate và tổng hợp feedback.
 
 ## 5. Prototype Feedback
 
-Chưa có test A/B/C thật. [Feedback cá nhân](prototype-feedback-note.md) và [tổng hợp nhóm](group-feedback-synthesis.md) là mẫu chưa điền. Interview Day17 không phải feedback prototype.
+Chưa nhận được dữ liệu test A/B/C thật. [Feedback cá nhân](prototype-feedback-note.md) và [tổng hợp nhóm](group-feedback-synthesis.md) là mẫu chưa điền. Interview Day17 không phải feedback prototype.
 
 Next Change sau test chưa chốt. Still Unproven: độ phổ biến/công sức/hậu quả tìm lại, cần AI hay chỉ truy cập nhanh, barrier hiểu kiến thức, tin nguồn và hiệu quả học tập.
 
@@ -50,8 +52,9 @@ Next Change sau test chưa chốt. Still Unproven: độ phổ biến/công sứ
 - [x] Chặng 2: A/B/C và comparison contract; B tìm note theo ý nhớ.
 - [x] Chặng 3: Human–AI Decision Table và control/recovery.
 - [ ] Nhóm xác nhận phân công; rà nguồn/mốc chưa đối chiếu audio.
-- [ ] Chặng 4: build lại theo task tìm ý đã học, fixture Day15–17; xác minh nguồn thật hoặc ghi rõ nguồn mô phỏng.
-- [ ] Chặng 5: cập nhật prompt/observation focus theo task mới.
+- [x] Chặng 4: có bộ A/B/C Lovable, fixture 4 note và nguồn/AI mô phỏng; người học xác nhận đã build.
+- [ ] Gate 4: tester ngoài nhóm tự hoàn thành task; reset/undo và truy cập không đăng nhập cần xác minh.
+- [x] Chặng 5: outcome task, năm observation focus, script, baseline và lịch ba phiên đã chuẩn bị.
 - [ ] Chặng 6: ba tester ngoài nhóm, mỗi người dùng đủ A/B/C, ba feedback và một Next Change.
 - [ ] Đóng góp/reflection cá nhân, link chia sẻ và tên repo đúng yêu cầu nộp.
 

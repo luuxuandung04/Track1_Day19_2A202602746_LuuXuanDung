@@ -1,8 +1,8 @@
-# Prototype Feedback Note — Lưu Xuân Dũng
+# Prototype Feedback Note — Nguyễn Văn An
 
 **Chưa có dữ liệu test thật. Mẫu sẵn dùng; không phải kết quả đã hoàn thành.**
 
-- Facilitator: Lưu Xuân Dũng; tester mã: [chưa có]; ngày/giờ: [chưa có].
+- Facilitator: Nguyễn Văn An; tester mã: [chưa có]; ngày/giờ: [chưa có].
 - Ngoài nhóm: [chưa xác nhận]; context liên quan: [lời kể thật].
 - Thứ tự options: [ghi thực tế]; baseline/thiết bị: [ghi thực tế].
 - AI/source mô phỏng đã được thông báo: [chưa xác nhận].
