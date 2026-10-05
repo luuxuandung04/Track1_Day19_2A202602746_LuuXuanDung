@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="vi">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Notes · A/B/C</title>
+<link rel="stylesheet" href="style.css">
+<body>
+<header><div><small>PERSONAL LEARNING NOTES</small><h1>Giữ lại điều bạn muốn nhớ.</h1><p>Bản thử nghiệm · AI mô phỏng · Note chỉ tồn tại trong phiên này</p></div><button id="reset" class="quiet">Reset phiên</button></header>
+<main>
+<section id="context" class="card"><span class="tag">Bối cảnh chung</span><h2>Vừa học xong: Precision & Recall</h2><p>Bạn đã đánh dấu “Precision” và câu hỏi “Làm sao biết hệ thống đang bỏ sót nhiều?”. Hãy tạo, kiểm tra và lưu một note để xem lại khi ôn tập.</p><div class="choices"><button data-option="A">Phương án A</button><button data-option="B">Phương án B</button><button data-option="C">Phương án C</button></div></section>
+<section id="workspace" hidden>
+<nav><button id="back" class="quiet">← Về bối cảnh</button><div class="choices"><button data-option="A">A</button><button data-option="B">B</button><button data-option="C">C</button></div></nav>
+<div class="grid"><aside class="card"><span class="tag">Cùng một học liệu</span><h2>Bài học & dấu vết</h2>
+<article id="S1"><h3>S1 · Precision</h3><p>Precision = TP / (TP + FP). Trong những trường hợp hệ thống dự đoán là dương tính, bao nhiêu trường hợp thực sự dương tính?</p><span class="mark">Highlight của bạn: Precision</span></article>
+<article id="S2"><h3>S2 · Recall</h3><p>Recall = TP / (TP + FN). Trong tất cả trường hợp thực sự dương tính, hệ thống tìm được bao nhiêu? Recall thấp có thể cho thấy nhiều trường hợp bị bỏ sót.</p><span class="mark">Chưa hiểu: Làm sao biết hệ thống đang bỏ sót nhiều?</span></article>
+<article id="S3"><h3>S3 · Trade-off</h3><p>Chọn ngưỡng cần cân nhắc hậu quả của false positive và false negative. Precision cao không tự đảm bảo recall cao.</p></article><p class="muted">Học liệu mẫu được soạn cho bản thử nghiệm.</p></aside>
+<section class="card"><span id="badge" class="tag"></span><h2 id="title"></h2><p id="expectation"></p>
+<div id="ask" hidden><label for="focus">Bạn muốn tổ chức note theo trọng tâm nào?</label><select id="focus"><option value="question">Câu hỏi: Làm sao nhận biết bỏ sót?</option><option value="concept">Khái niệm: Precision khác Recall thế nào?</option></select><button id="generate">Tạo bản nháp từ trọng tâm</button></div>
+<button id="suggest" class="quiet" hidden>Gợi ý khung ghi chú</button>
+<label for="note">Ghi chú của bạn</label><textarea id="note" rows="12" placeholder="Viết ý cần nhớ và điều còn chưa hiểu…"></textarea>
+<p class="muted">Nguồn sẵn có: S1–S3. Gợi ý AI chưa xác nhận bạn đã hiểu; hãy kiểm tra và giữ câu hỏi còn mở.</p>
+<div class="actions"><button id="source" class="quiet">Đối chiếu nguồn</button><button id="reject" class="quiet">Bỏ nội dung</button><button id="undo" class="quiet">Hoàn tác</button><button id="save">Xác nhận & lưu</button></div>
+<p id="status" role="status" aria-live="polite"></p>
+<section id="saved" hidden><h3>Note đã lưu trong phiên</h3><pre id="preview"></pre><button id="download" class="quiet">Tải note để xem lại</button></section>
+</section></div></section>
+</main><footer>A / B / C · Một task, ba cách cùng tạo ghi chú.</footer>
+<script src="app.js"></script>
+</body></html>

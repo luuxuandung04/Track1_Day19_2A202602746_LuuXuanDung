@@ -1,0 +1,7 @@
+sources/
+*.m4a
+*.mp3
+*.wav
+node_modules/
+.DS_Store
+Thumbs.db
