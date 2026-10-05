@@ -1,3 +1,5 @@
+> **CHƯA CẬP NHẬT THEO BẢN CHỐT CHẶNG 1–3:** tài liệu/HTML dưới đây là bản thử cũ với task tạo note precision/recall. Bản chính thức chuyển sang tìm lại note và nguồn trong lúc làm Lab; cần cập nhật ở chặng 4–5 trước khi dùng test. Xem three-option-design-sheet.md.
+
 # Prototype A/B/C
 
 Mở [prototype/index.html](prototype/index.html) bằng Chrome/Edge. Chọn A, B hoặc C; mỗi option có cùng fixture và phần kiểm tra/lưu. Nút Về bối cảnh đưa về common context; “Reset phiên” xóa note của cả ba trong phiên.

@@ -1,3 +1,5 @@
+> **CHƯA CẬP NHẬT THEO BẢN CHỐT CHẶNG 1–3:** tài liệu/HTML dưới đây là bản thử cũ với task tạo note precision/recall. Bản chính thức chuyển sang tìm lại note và nguồn trong lúc làm Lab; cần cập nhật ở chặng 4–5 trước khi dùng test. Xem three-option-design-sheet.md.
+
 # Test Prompt + Observation Focus
 
 ## Recruitment và context (tối đa 2 phút)

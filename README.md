@@ -1,64 +1,58 @@
 # Track1_Day19_2A202602746_LuuXuanDung
 
-Repo chuẩn bị bài lab Multiple Prototypes & Human–AI Design, ngày 05/10/2026.
-Tên Day19 theo yêu cầu người học; đề VLearn của buổi Day18+19 hiện yêu cầu tên `Track1_Day18_MHV_HoVaTen`. Cần đối chiếu tên trước khi nộp.
+Bản chốt tài liệu đến **Chặng 3** — 05/10/2026. Tên Day19 theo yêu cầu Dũng; đề VLearn buổi Day18+19 ghi Day18, cần đối chiếu trước nộp.
 
 ## 1. Thông tin cá nhân và nhóm
 
-- MHV: **2A202602746**; họ tên: **Lưu Xuân Dũng**.
-- Nhóm: **3aecaykhe**; thành viên: Lưu Xuân Dũng, Nguyễn Văn An, Nguyễn Long Khánh.
-- Case giữ nguyên Day17: **Case B — AI Notes: Personal Learning Notes**.
-- Baseline: [repo Day17](https://github.com/luuxuandung04/Track1_Day17_2A202602746_LuuXuanDung).
+- MHV: 2A202602746 · Lưu Xuân Dũng · GitHub: luuxuandung04.
+- Nhóm 3aecaykhe: Nguyễn Văn An, Lưu Xuân Dũng, Nguyễn Long Khánh.
+- Case B — AI Notes: Personal Learning Notes.
+- Baseline: https://github.com/luuxuandung04/Track1_Day17_2A202602746_LuuXuanDung
 - Đề: https://vlearn.dev/course/k04-l34-p2-t1/reader?day=D05&part=codelab-f3fc688af6874124b3d45f0d65a5a14e-s11-doc
-- Trạng thái: đã có evidence snapshot, thiết kế A/B/C, prototype HTML mô phỏng và hướng dẫn test; **chưa có phiên test A/B/C thật hoặc quyết định nhóm sau test**.
 
 ## 2. Hypothesis Problem
 
-**Giả thuyết làm việc kế thừa Day17, cần nhóm chốt:** Khi theo dõi bài giảng có nhiều nội dung mới, người học gặp khó khăn trong việc chọn lọc và lưu ý quan trọng vì phải đồng thời hiểu bài và quyết định nội dung cần giữ, dẫn đến có thể bỏ sót ý hoặc phải xem lại học liệu để chuẩn bị ôn tập.
+Khi cần ôn tập hoặc dùng lại kiến thức đã học trong khóa online (VLearn) sau một thời gian, người học tự ghi chú gặp khó khăn trong việc tiếp cận đúng ý cần dùng và quay về nội dung gốc, vì ghi chú nằm phân tán (theo từng slide trên nền tảng, hoặc ở công cụ riêng tách khỏi slide) và AI bên ngoài không biết ngữ cảnh bài học, dẫn đến phải dò lại slide, chuyển qua lại giữa nhiều công cụ và mất thêm công để tìm lại.
 
-Barrier và consequence là giả thuyết, chưa được xác nhận. P01 có tín hiệu khó hiểu thuật ngữ; SV1 có hành vi ghi từ khóa và pain tìm lại; SV2 có cách ghi riêng đáp ứng nhu cầu. Không gộp ba người thành một hành vi hoặc coi họ đã thử prototype. Giả thuyết cạnh tranh B (khó tìm/hiểu lại ghi chú) được SV1 hỗ trợ mạnh hơn A; giữ B trong phần Still Unproven, không tự đổi problem. Xem [Evidence Snapshot](evidence-snapshot.md).
+Đây là giả thuyết nhóm chọn theo bản tổng hợp, chưa validated. [Chặng 1: evidence và phản chứng](evidence-snapshot.md) phân biệt An-P01/Dũng-P01/SV1/SV2, ghi nguồn An qua tổng hợp nhóm và giới hạn ASR.
 
 ## 3. Three Solution Options
 
-| Option | Cơ chế | Quyền quyết định |
+| A | B | C |
 |---|---|---|
-| A | User chọn dấu vết và tự viết note; AI chỉ gợi ý cấu trúc theo yêu cầu | User chọn nội dung và cấu trúc |
-| B | AI hỏi trọng tâm trước, rồi tạo nháp từ dấu vết và câu trả lời | User định hướng, sửa và xác nhận |
-| C | AI tạo nháp trước từ cùng dấu vết; user review sau | AI khởi tạo; user có quyền bỏ, sửa, lưu |
+| Gom note và nguồn, user tìm từ khóa | AI tìm note theo ý user nhớ, trả ứng viên nguyên bản | AI chủ động gom note liên quan khi mở Lab |
 
-- [Design Sheet](three-option-design-sheet.md) · [Prototype và cách mở](prototype-link.md).
-- Mở `prototype/index.html` bằng trình duyệt; không cần cài đặt, mạng, API hoặc model thật.
-- Nội dung mẫu do Codex tạo, không phải lời người tham gia hay bài giảng thật.
+User ở cả ba chọn note, kiểm nguồn và tự viết câu có dẫn nguồn vào nháp Lab. B không giảng giải/viết câu hộ; C không tự chèn bài.
 
-## 4. Đóng góp của tôi trong nhóm
+[Chặng 2–3: Design Sheet và Human–AI Decision Table](three-option-design-sheet.md).
 
-Người học đã cung cấp repo Day17, transcript của anh Khánh và yêu cầu chuẩn bị repo này. Codex đã tổ chức evidence, đề xuất thiết kế và tạo code prototype. Chưa có xác nhận Dũng phụ trách option nào, nhóm đã thông qua thiết kế hay ai đã thực hiện test. Không ghi các việc do AI tạo thành đóng góp cá nhân đã làm.
+**Prototype hiện có và test-plan cũ chưa khớp thiết kế đã chốt:** chúng dùng task tạo note precision/recall. Cần cập nhật trong chặng 4–5 trước khi test, không coi chúng đã đạt gate 4. Xem [trạng thái prototype](prototype-link.md).
 
-**Dũng bổ sung sau khi thực hiện:** option chịu trách nhiệm: [chưa xác nhận]; phần tự thiết kế/chỉnh sửa: [chưa ghi]; shared context/content: [chưa ghi]; phiên facilitate: [chưa diễn ra]; đóng góp tổng hợp: [chưa ghi].
+## 4. Đóng góp cá nhân
+
+Dũng cung cấp bản tổng hợp nhóm, yêu cầu đổi B và chốt tài liệu đến chặng 3. Codex biên tập repo, cập nhật B và hoàn thiện bảng Human–AI. Phân công A–An/B–Dũng/C–Khánh vẫn là đề xuất chưa xác nhận; chưa ghi việc AI tạo thành việc cá nhân đã thực hiện.
+
+Phần Dũng tự bổ sung sau khi làm: owner option, chỉnh sửa thực tế, shared artifact, facilitate và tổng hợp feedback.
 
 ## 5. Prototype Feedback
 
-- [Test Prompt](test-plan.md).
-- [Feedback Note cá nhân của Dũng](prototype-feedback-note.md): mẫu chưa điền, không lấy P01/SV1/SV2 làm tester đã test.
-- [Group Feedback Synthesis](group-feedback-synthesis.md): chưa có ba feedback prototype.
-- Next Change sau test: chưa chốt. Không dùng số người thích option để kết luận validated.
-- Still Unproven: pain chọn/lưu trong lúc học có phổ biến không; AI có làm giảm công sức hay tăng kiểm tra; user có mở lại note; hiệu quả dài hạn và kết quả học tập.
+Chưa có test A/B/C thật. [Feedback cá nhân](prototype-feedback-note.md) và [tổng hợp nhóm](group-feedback-synthesis.md) là mẫu chưa điền. Interview Day17 không phải feedback prototype.
+
+Next Change sau test chưa chốt. Still Unproven: độ phổ biến/công sức/hậu quả tìm lại, cần AI hay chỉ truy cập nhanh, barrier hiểu kiến thức, tin nguồn và hiệu quả học tập.
 
 ## 6. AI Support Log
 
-[AI Support Log](ai-support-log.md) ghi nguồn, những gì AI đã tạo, giới hạn và phần người học cần tự phản ánh.
+[AI Support Log](ai-support-log.md): nguồn AI hỗ trợ, giới hạn và reflection cá nhân cần tự điền.
 
-## Checklist trước khi nộp
+## Trạng thái chặng
 
-- [x] Repo cá nhân, README sáu phần, evidence có nguồn và giới hạn.
-- [x] Ba cơ chế cùng context, task, fixture và desired outcome; bảng Human–AI decisions.
-- [x] Có prototype chạy cục bộ, review/edit/reject/undo/reset và nội dung mô phỏng.
-- [ ] Nhóm chốt Hypothesis Problem, options và phân công; xác nhận tên Day18/Day19.
-- [ ] Bổ sung Practice Note của An; ba nguồn người tham gia hiện có không đồng nghĩa mỗi thành viên đã nộp một note.
-- [ ] Người ngoài nhóm tự dùng cả A/B/C; ghi nhận kiểm tra test-ready thực tế.
-- [ ] Mỗi thành viên test đủ A/B/C với một người ngoài nhóm; có ba Feedback Notes độc lập.
-- [ ] Chốt một Group Next Change có evidence, ghi Still Unproven.
-- [ ] Dũng điền đóng góp/reflection thật và AI Support Log cá nhân.
-- [ ] Có link chia sẻ prototype/artifact mở được với giảng viên/TA.
+- [x] Chặng 1: evidence/hypothesis/phản chứng theo tổng hợp nhóm.
+- [x] Chặng 2: A/B/C và comparison contract; B tìm note theo ý nhớ.
+- [x] Chặng 3: Human–AI Decision Table và control/recovery.
+- [ ] Nhóm xác nhận phân công; rà nguồn/mốc chưa đối chiếu audio.
+- [ ] Chặng 4: build lại theo task tìm ý đã học, fixture Day15–17; xác minh nguồn thật hoặc ghi rõ nguồn mô phỏng.
+- [ ] Chặng 5: cập nhật prompt/observation focus theo task mới.
+- [ ] Chặng 6: ba tester ngoài nhóm, mỗi người dùng đủ A/B/C, ba feedback và một Next Change.
+- [ ] Đóng góp/reflection cá nhân, link chia sẻ và tên repo đúng yêu cầu nộp.
 
-Repo được chuẩn bị cục bộ; chưa tạo hoặc đăng lên GitHub.
+Repo cục bộ, chưa publish GitHub. Sources giữ cục bộ và được gitignore.
