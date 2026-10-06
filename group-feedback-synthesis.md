@@ -1,29 +1,30 @@
-# Chặng 6 — Group Feedback Synthesis
+# Chặng 6 — Group Feedback Synthesis từ kịch bản luyện tập
 
-**Chưa nhận ba Feedback Notes prototype; chưa có kết luận hoặc Group Next Change từ người dùng.** Interview An-P01/Dũng-P01/SV1/SV2 không thay thế test A/B/C.
+> Tổng hợp dưới đây dùng ba persona AI tạo (S01–S03). Đây là dữ liệu luyện tập, không phải ba phiên test ngoài nhóm và không thay thế Gate 5 bằng người dùng thật.
 
-| Nội dung | Phiên Dũng | Phiên An | Phiên Khánh | Pattern / khác biệt |
+| Nội dung | S01 — Dũng | S02 — An | S03 — Khánh | Pattern / khác biệt trong kịch bản |
 |---|---|---|---|---|
-| Context / thứ tự | Chưa có | Chưa có | Chưa có | Chưa kết luận |
-| First action | Chưa có | Chưa có | Chưa có | Chưa kết luận |
-| Breakdown / giúp đỡ | Chưa có | Chưa có | Chưa có | Chưa kết luận |
-| Kiểm nguồn / nguồn thiếu | Chưa có | Chưa có | Chưa có | Chưa kết luận |
-| Control / recovery | Chưa có | Chưa có | Chưa có | Chưa kết luận |
-| Outcome task | Chưa có | Chưa có | Chưa có | Chưa kết luận |
-| Option chọn / trade-off | Chưa có | Chưa có | Chưa có | Chưa kết luận |
-| Trái kỳ vọng nhóm | Chưa có | Chưa có | Chưa có | Chưa kết luận |
+| Thứ tự | A–B–C | B–C–A | C–A–B | Đã xoay thứ tự để diễn tập |
+| First action | Tìm từ khóa | Mô tả ý nhớ | Duyệt gợi ý sẵn | Mỗi cơ chế có điểm khởi động khác nhau |
+| Breakdown | Đổi từ khóa | Phân vân note gần nghĩa | Suýt bỏ qua kiểm nguồn | Nguồn và độ phù hợp là điểm quyết định |
+| Kiểm nguồn | Mở nguồn trước viết | Loại note thiếu nguồn | Ban đầu định sao chép trước khi mở | Hai persona kiểm sớm; một persona cần nhắc trạng thái |
+| Recovery | Đổi query/tìm thủ công | Loại ứng viên | Bỏ gợi ý/tìm thủ công | Cả ba cần đường quay về tìm chủ động |
+| Option chọn | A | B | C | Không có option thắng; lựa chọn phụ thuộc cách nhớ và áp lực thời gian |
+| Trade-off | Control ↔ nhớ từ khóa | Không cần từ khóa ↔ đọc ứng viên | Ít thao tác ↔ automation bias | Ba cơ chế tạo trade-off có ý nghĩa |
 
-## Cách tổng hợp sau đủ dữ liệu
+## Pattern học được từ bài diễn tập
 
-1. So observation từng focus; tìm cả điểm lặp và khác biệt, không chỉ đếm lượt chọn.
-2. Phân biệt do mechanism, context, thứ tự, fixture hay lỗi thao tác. B có chức năng note nhanh ngoài task, ghi nếu gây nhiễu.
-3. Chọn một thay đổi cụ thể: giữ và sửa một interaction; kết hợp với cơ chế chính rõ; bỏ option; hoặc sửa cả ba và test tiếp.
-4. Nêu evidence theo mã tester/option và hành vi; ghi evidence trái quyết định.
+1. Note có nguồn được ưu tiên hơn note gần nghĩa nhưng thiếu nguồn.
+2. Tìm thủ công là recovery chung cần giữ trong B/C.
+3. A phù hợp khi nhớ từ khóa; B khi nhớ ý; C khi context task rõ và user muốn bắt đầu nhanh.
+4. C có rủi ro lớn nhất về việc dùng gợi ý trước khi kiểm chứng.
 
-**OBSERVED:** chưa có. **INTERPRETED:** chưa có. **GROUP NEXT CHANGE:** chờ dữ liệu test. **Evidence dẫn tới:** chờ dữ liệu.
+## Group Next Change cho iteration luyện tập
 
-**STILL UNPROVEN:** pain phổ biến/tần suất/hậu quả; AI có hơn truy cập nhanh; khả năng hiểu kiến thức; retrieval lâu dài; giá trị model thật. Ba feedback không chứng minh market demand/product value. Tất cả nguồn/AI prototype là minh họa, task lặp có ảnh hưởng học trước.
+**Thêm trạng thái kiểm chứng nguồn nhất quán trên A/B/C: “Chưa mở nguồn” → “Đã kiểm tra nguồn”; chỉ bật thao tác sao chép dẫn nguồn sau khi user đã mở nguồn trong phiên.**
 
-## Review bổ sung do AI mô phỏng
+Evidence từ kịch bản: S02 loại note 04 vì thiếu nguồn; S03 suýt sao chép trước khi mở nguồn; S01 chủ động kiểm nguồn ở mọi option. Thay đổi này giữ user quyết định câu viết, giảm nguy cơ dùng dẫn chứng chưa kiểm tra và không làm ba cơ chế giống nhau.
 
-Xem [review ba persona và Next Change đề xuất](ai-simulated-review.md). Đây là phân tích giả định, không phải test ngoài nhóm; gate 5 và Next Change từ dữ liệu người thật vẫn chờ feedback.
+## Still Unproven
+
+Ba persona không chứng minh hành vi người thật. Chưa biết trạng thái bắt buộc mở nguồn có tạo ma sát, semantic search thật có xếp đúng, pain có phổ biến, hoặc giải pháp cải thiện việc học dài hạn. Cần ba người ngoài nhóm dùng cùng task để kiểm chứng.

@@ -38,9 +38,9 @@ Phần Dũng tự bổ sung sau khi làm: owner option, chỉnh sửa thực t�
 
 ## 5. Prototype Feedback
 
-Chưa nhận được dữ liệu test A/B/C thật. [Feedback cá nhân](prototype-feedback-note.md) và [tổng hợp nhóm](group-feedback-synthesis.md) là mẫu chưa điền. Interview Day17 không phải feedback prototype.
+Đã hoàn thành bộ diễn tập với ba persona AI: [S01](prototype-feedback-note.md), [S02](feedback-templates/an-feedback-note.md), [S03](feedback-templates/khanh-feedback-note.md) và [bản tổng hợp](group-feedback-synthesis.md). Đây là dữ liệu luyện tập, không phải test ngoài nhóm; Interview Day17 không phải feedback prototype.
 
-Next Change sau test chưa chốt. Still Unproven: độ phổ biến/công sức/hậu quả tìm lại, cần AI hay chỉ truy cập nhanh, barrier hiểu kiến thức, tin nguồn và hiệu quả học tập.
+Next Change của bài diễn tập: thêm trạng thái “Chưa mở nguồn/Đã kiểm tra nguồn” và chỉ bật sao chép dẫn nguồn sau khi mở nguồn. Still Unproven: hành vi người thật, độ phổ biến/công sức/hậu quả tìm lại, giá trị AI thật và hiệu quả học tập.
 
 ## 6. AI Support Log
 
@@ -55,7 +55,8 @@ Next Change sau test chưa chốt. Still Unproven: độ phổ biến/công sứ
 - [x] Chặng 4: có bộ A/B/C Lovable, fixture 4 note và nguồn/AI mô phỏng; người học xác nhận đã build.
 - [ ] Gate 4: tester ngoài nhóm tự hoàn thành task; reset/undo và truy cập không đăng nhập cần xác minh.
 - [x] Chặng 5: outcome task, năm observation focus, script, baseline và lịch ba phiên đã chuẩn bị.
-- [ ] Chặng 6: ba tester ngoài nhóm, mỗi người dùng đủ A/B/C, ba feedback và một Next Change.
+- [x] Chặng 6 dạng luyện tập: ba persona AI, ba feedback scenarios và một Next Change.
+- [ ] Gate 5 thực tế: ba tester ngoài nhóm dùng đủ A/B/C.
 - [ ] Đóng góp/reflection cá nhân, link chia sẻ và tên repo đúng yêu cầu nộp.
 
 Repo cục bộ, chưa publish GitHub. Sources giữ cục bộ và được gitignore.

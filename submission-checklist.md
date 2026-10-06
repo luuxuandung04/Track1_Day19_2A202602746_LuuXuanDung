@@ -17,3 +17,10 @@
 - [ ] Tạo/push GitHub theo phạm vi người học xác nhận; chưa đăng hoặc nộp bài trong lần chuẩn bị này.
 
 Không đánh dấu các mục test hoàn thành chỉ vì có template hoặc vì agent đã kiểm giao diện.
+
+## Hoàn thiện bài diễn tập — 06/10/2026
+
+- [x] Ba persona scenarios S01–S03.
+- [x] Ba feedback notes luyện tập.
+- [x] Pattern, Next Change và Still Unproven.
+- [ ] Ba phiên người dùng thật vẫn chưa có; không trình bày scenarios như test thật.

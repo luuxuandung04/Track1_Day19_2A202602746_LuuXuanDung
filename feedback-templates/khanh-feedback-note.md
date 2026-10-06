@@ -1,30 +1,29 @@
-# Prototype Feedback Note — Nguyễn Long Khánh
+# Prototype Feedback Note — Kịch bản luyện tập S03
 
-**Chưa có dữ liệu test thật. Mẫu sẵn dùng; không phải kết quả đã hoàn thành.**
+> Dữ liệu luyện tập do AI tạo từ persona, dùng để diễn tập cách ghi chép và tổng hợp. Không phải phiên test với người dùng thật.
 
-- Facilitator: Nguyễn Long Khánh; tester mã: [chưa có]; ngày/giờ: [chưa có].
-- Ngoài nhóm: [chưa xác nhận]; context liên quan: [lời kể thật].
-- Thứ tự options: [ghi thực tế]; baseline/thiết bị: [ghi thực tế].
-- AI/source mô phỏng đã được thông báo: [chưa xác nhận].
+- Persona: S03 — đang làm Lab, ít thời gian, muốn hệ thống gợi ý trước.
+- Người biên soạn tài liệu: Codex; thứ tự: C → A → B.
 
-| Dữ kiện | A | B | C |
+| Dữ kiện | C | A | B |
 |---|---|---|---|
-| First action | Chưa có | Chưa có | Chưa có |
-| Do dự/hiểu sai/lời hỏi | Chưa có | Chưa có | Chưa có |
-| Evidence đọc/bỏ qua | Chưa có | Chưa có | Chưa có |
-| Sửa/control/recovery | Chưa có | Chưa có | Chưa có |
-| Trợ giúp facilitator | Chưa có | Chưa có | Chưa có |
-| Tìm ý → kiểm nguồn → viết câu/dẫn nguồn | Chưa có | Chưa có | Chưa có |
-| Thời lượng nếu đo | Chưa đo | Chưa đo | Chưa đo |
-| Evidence trái kỳ vọng | Chưa có | Chưa có | Chưa có |
+| First action | Chọn ngay note 01 từ danh sách gợi ý | Gõ “kiểm chứng nhu cầu” | Nhập mô tả ngắn về ý nhớ |
+| Do dự/hiểu sai | Suýt sao chép nguồn mà chưa mở slide | Không gặp khó khi từ khóa đúng | Thấy B giống A khi đã biết từ khóa |
+| Evidence | Quay lại mở nguồn note 01 | Mở nguồn note 02 rồi note 01 | Mở nguồn note 01 |
+| Recovery | Bỏ note 03, giữ 01; dùng tìm thủ công để đối chiếu | Sửa từ khóa từ “kiểm chứng” sang “không ai cần” | Chuyển tab từ mô tả sang từ khóa để so sánh |
+| Outcome | Hoàn thành task trong kịch bản | Hoàn thành task trong kịch bản | Hoàn thành task trong kịch bản |
+| Evidence trái kỳ vọng | Gợi ý trước có thể khiến bỏ qua kiểm nguồn | A không quá chậm với fixture nhỏ | B không hơn A khi user đã biết đúng từ khóa |
 
-Option chọn: [chưa có]. Lý do/trade-off nguyên lời hoặc paraphrase có nhãn: [chưa có]. Phần muốn tự làm/giao AI: [chưa có]. Điểm chưa thoải mái: [chưa có].
+Persona chọn **C** vì giảm bước khởi động. Trade-off: nguy cơ chấp nhận gợi ý sẵn mà không kiểm chứng.
 
-## OBSERVED
-Hành vi/lời nói thực tế: [chưa có]. Không ghi diễn giải thành fact.
+## OBSERVED TRONG KỊCH BẢN
+Luồng cố tình chứa một khoảnh khắc bỏ qua nguồn để kiểm tra vai trò của cảnh báo và control.
+
 ## INTERPRETED
-Ý nghĩa có thể có và giải thích cạnh tranh: [chưa có].
-## DECIDED — NEXT CHANGE
-Đề xuất từ phiên này và evidence dẫn tới: [chưa có]. Quyết định nhóm chốt sau đủ ba phiên.
+C hữu ích cho task có context rõ, nhưng cần buộc user nhận biết trạng thái nguồn trước khi dùng dẫn chứng.
+
+## NEXT CHANGE ĐỀ XUẤT
+Không cho “Sao chép dẫn nguồn” nếu chưa mở nguồn lần đầu trong phiên; hiển thị trạng thái “Đã kiểm tra nguồn”.
+
 ## STILL UNPROVEN
-Giới hạn context, thứ tự, fixture/AI mô phỏng và điều chưa thể kết luận từ một người: [điền sau test].
+Chưa biết ma sát bắt buộc mở nguồn có gây khó chịu hoặc làm giảm tốc độ task với người thật hay không.

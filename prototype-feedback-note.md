@@ -1,30 +1,29 @@
-# Prototype Feedback Note — Lưu Xuân Dũng
+# Prototype Feedback Note — Kịch bản luyện tập S01
 
-**Chưa có dữ liệu test thật. Mẫu sẵn dùng; không phải kết quả đã hoàn thành.**
+> Dữ liệu luyện tập do AI tạo từ persona, dùng để diễn tập cách ghi chép và tổng hợp. Không phải phiên test với người dùng thật.
 
-- Facilitator: Lưu Xuân Dũng; tester mã: [chưa có]; ngày/giờ: [chưa có].
-- Ngoài nhóm: [chưa xác nhận]; context liên quan: [lời kể thật].
-- Thứ tự options: [ghi thực tế]; baseline/thiết bị: [ghi thực tế].
-- AI/source mô phỏng đã được thông báo: [chưa xác nhận].
+- Persona: S01 — quen tìm kiếm, nhớ từ khóa, ưu tiên quyền kiểm soát.
+- Người biên soạn tài liệu: Codex; thứ tự: A → B → C.
 
 | Dữ kiện | A | B | C |
 |---|---|---|---|
-| First action | Chưa có | Chưa có | Chưa có |
-| Do dự/hiểu sai/lời hỏi | Chưa có | Chưa có | Chưa có |
-| Evidence đọc/bỏ qua | Chưa có | Chưa có | Chưa có |
-| Sửa/control/recovery | Chưa có | Chưa có | Chưa có |
-| Trợ giúp facilitator | Chưa có | Chưa có | Chưa có |
-| Tìm ý → kiểm nguồn → viết câu/dẫn nguồn | Chưa có | Chưa có | Chưa có |
-| Thời lượng nếu đo | Chưa đo | Chưa đo | Chưa đo |
-| Evidence trái kỳ vọng | Chưa có | Chưa có | Chưa có |
+| First action | Gõ “nhu cầu” vào ô tìm | Mô tả ý nhớ bằng một câu | Đọc ngay ứng viên đầu tiên |
+| Do dự/hiểu sai | Đổi từ khóa một lần | Dừng để so hai kết quả gần nghĩa | Ban đầu chưa biết vì sao hệ thống gợi ý note 03 |
+| Evidence | Mở nguồn note 01 trước khi viết | Mở nguồn note 01; bỏ note 04 thiếu nguồn | Mở nguồn note 01 sau khi đọc lý do |
+| Recovery | Đổi “sản phẩm” sang “nhu cầu” | Loại note 04, giữ note 01 | Tắt gợi ý rồi mở tìm thủ công để kiểm tra lại |
+| Outcome | Hoàn thành task trong kịch bản | Hoàn thành task trong kịch bản | Hoàn thành task trong kịch bản |
+| Evidence trái kỳ vọng | Tìm từ khóa đã đủ, không cần AI | B hữu ích nhưng có thêm bước đọc ứng viên | C không tiết kiệm nhiều vì vẫn kiểm tra lại |
 
-Option chọn: [chưa có]. Lý do/trade-off nguyên lời hoặc paraphrase có nhãn: [chưa có]. Phần muốn tự làm/giao AI: [chưa có]. Điểm chưa thoải mái: [chưa có].
+Persona chọn **A** vì cơ chế dễ đoán và tự kiểm soát. Trade-off: phải nhớ một từ khóa đủ gần với note.
 
-## OBSERVED
-Hành vi/lời nói thực tế: [chưa có]. Không ghi diễn giải thành fact.
+## OBSERVED TRONG KỊCH BẢN
+Luồng được xây dựng để persona ưu tiên tìm chủ động, kiểm nguồn và tránh note thiếu nguồn.
+
 ## INTERPRETED
-Ý nghĩa có thể có và giải thích cạnh tranh: [chưa có].
-## DECIDED — NEXT CHANGE
-Đề xuất từ phiên này và evidence dẫn tới: [chưa có]. Quyết định nhóm chốt sau đủ ba phiên.
+A có thể phù hợp với người có chiến lược tìm kiếm rõ; B/C chỉ tạo thêm giá trị khi user không nhớ từ khóa hoặc cần khởi động nhanh.
+
+## NEXT CHANGE ĐỀ XUẤT
+Giữ bộ lọc nguồn và làm nhãn “Thiếu nguồn” nổi bật ở mọi option.
+
 ## STILL UNPROVEN
-Giới hạn context, thứ tự, fixture/AI mô phỏng và điều chưa thể kết luận từ một người: [điền sau test].
+Chưa biết người thật có hành động như persona, có hoàn thành độc lập hoặc tiết kiệm thời gian hay không.
