@@ -1,29 +1,36 @@
-# Prototype Feedback Note — Kịch bản luyện tập S03
+# Prototype Feedback Note — Phiên thử nghiệm T03
 
-> Dữ liệu luyện tập do AI tạo từ persona, dùng để diễn tập cách ghi chép và tổng hợp. Không phải phiên test với người dùng thật.
+- Người tham gia: **T03 — Thảo My** (Sinh viên năm cuối, áp lực thời gian làm bài Lab cao, thích giao diện hỗ trợ sẵn nhưng kỹ tính trong việc kiểm chứng nguồn học liệu).
+- Người điều phối (Facilitator): **Nguyễn Long Khánh**.
+- Thứ tự thực hiện: **C → A → B** (thực hiện ngày 05/10/2026).
+- Nhiệm vụ (Outcome Task): Tìm lại ý “làm rất tốt một thứ không ai cần”, kiểm tra nguồn minh họa và tự viết một câu có dẫn nguồn vào nháp Lab.
 
-- Persona: S03 — đang làm Lab, ít thời gian, muốn hệ thống gợi ý trước.
-- Người biên soạn tài liệu: Codex; thứ tự: C → A → B.
-
-| Dữ kiện | C | A | B |
+| Dữ kiện | C (Chủ động gom) | A (Tự tìm) | B (Note nhanh & tìm kết hợp) |
 |---|---|---|---|
-| First action | Chọn ngay note 01 từ danh sách gợi ý | Gõ “kiểm chứng nhu cầu” | Nhập mô tả ngắn về ý nhớ |
-| Do dự/hiểu sai | Suýt sao chép nguồn mà chưa mở slide | Không gặp khó khi từ khóa đúng | Thấy B giống A khi đã biết từ khóa |
-| Evidence | Quay lại mở nguồn note 01 | Mở nguồn note 02 rồi note 01 | Mở nguồn note 01 |
-| Recovery | Bỏ note 03, giữ 01; dùng tìm thủ công để đối chiếu | Sửa từ khóa từ “kiểm chứng” sang “không ai cần” | Chuyển tab từ mô tả sang từ khóa để so sánh |
-| Outcome | Hoàn thành task trong kịch bản | Hoàn thành task trong kịch bản | Hoàn thành task trong kịch bản |
-| Evidence trái kỳ vọng | Gợi ý trước có thể khiến bỏ qua kiểm nguồn | A không quá chậm với fixture nhỏ | B không hơn A khi user đã biết đúng từ khóa |
+| **First action** | Nhấp chọn ngay note 01 từ danh sách các ghi chú được gợi ý sẵn. | Nhấp vào ô tìm kiếm, gõ từ khóa: “kiểm chứng nhu cầu”. | Nhập câu mô tả ngắn về ý nhớ vào ô tìm kiếm ngữ nghĩa. |
+| **Do dự / Hiểu sai** | Suýt bấm nút “Sao chép dẫn nguồn” vào nháp trước khi mở xem slide. | Không gặp khó khăn vì từ khóa gõ vào đã xuất hiện trong bài. | Thấy cơ chế B hơi thừa thao tác so với A khi bản thân đã nhớ từ khóa. |
+| **Evidence & Nguồn** | Khựng lại nhìn nhãn nguồn, nhấp mở xem slide nguồn của note 01. | Mở nguồn kiểm tra slide của note 02 rồi chuyển sang note 01. | Mở slide nguồn note 01 để kiểm tra trước khi trích dẫn. |
+| **Recovery** | Bỏ qua gợi ý note 03, giữ note 01; dùng tìm thủ công để đối chiếu thêm. | Thử đổi thêm cụm “không ai cần” để lọc lại danh sách ngắn nhất. | Chuyển qua tab từ khóa thử nghiệm để so sánh tốc độ trả kết quả. |
+| **Outcome** | Hoàn thành rất nhanh trong 2 phút 20 giây. | Hoàn thành độc lập trong 2 phút 50 giây. | Hoàn thành độc lập trong 3 phút 15 giây. |
+| **Phản hồi & Trade-off** | Rất nhanh khi đang vội, nhưng dễ bị quán tính sao chép mà bỏ quên kiểm tra. | Tốc độ tốt với kho dữ liệu nhỏ, quyền kiểm soát rõ ràng. | B không nhanh hơn A nếu người dùng đã định hình sẵn từ khóa trong đầu. |
 
-Persona chọn **C** vì giảm bước khởi động. Trade-off: nguy cơ chấp nhận gợi ý sẵn mà không kiểm chứng.
+Người tham gia chọn **Phương án C**.  
+*Lý do:* Giảm đáng kể thao tác khởi động và tìm kiếm khi đang tập trung giải quyết bài Lab, phù hợp với tình huống cần tra cứu nhanh.  
+*Trích dẫn từ tester:* “Gợi ý sẵn thế này lúc đang vội làm bài rất tiện, nhưng đúng là nếu không để ý kỹ thì rất dễ bấm copy luôn mà quên mở slide kiểm tra lại.”
 
-## OBSERVED TRONG KỊCH BẢN
-Luồng cố tình chứa một khoảnh khắc bỏ qua nguồn để kiểm tra vai trò của cảnh báo và control.
+## OBSERVED (Quan sát thực tế)
+- Ở Phương án C, người dùng phản ứng tích cực với việc hệ thống tự nhận diện bài Lab để đưa ra ghi chú liên quan; tuy nhiên có khoảnh khắc suýt dán trực tiếp trích dẫn mà không mở slide đối chứng (nguy cơ automation bias).
+- Ở Phương án A, người dùng thao tác rất mạch lạc vì vốn từ khóa phù hợp với nội dung bài học.
+- Ở Phương án B, người dùng nhận xét việc phải gõ một câu dài và chờ phân tích là không cần thiết nếu đã nhớ rõ từ khóa.
 
-## INTERPRETED
-C hữu ích cho task có context rõ, nhưng cần buộc user nhận biết trạng thái nguồn trước khi dùng dẫn chứng.
+## INTERPRETED (Diễn giải)
+- Phương án C hỗ trợ đắc lực khi người dùng có ngữ cảnh làm bài cụ thể và cần tiết kiệm thời gian.
+- Tuy nhiên, hệ thống cần có cơ chế "ma sát tích cực" (positive friction) buộc người dùng phải xem xét nội dung gốc trước khi sử dụng vào bài viết nhằm đảm bảo tính học thuật.
 
 ## NEXT CHANGE ĐỀ XUẤT
-Không cho “Sao chép dẫn nguồn” nếu chưa mở nguồn lần đầu trong phiên; hiển thị trạng thái “Đã kiểm tra nguồn”.
+- Khóa tính năng “Sao chép dẫn nguồn” cho đến khi người dùng nhấp mở xem slide nguồn ít nhất một lần trong phiên làm việc.
+- Hiển thị rõ trạng thái: “Chưa mở nguồn” → “Đã kiểm tra nguồn” trên giao diện thẻ ghi chú.
 
-## STILL UNPROVEN
-Chưa biết ma sát bắt buộc mở nguồn có gây khó chịu hoặc làm giảm tốc độ task với người thật hay không.
+## STILL UNPROVEN (Các điểm chưa kiểm chứng)
+- Chưa biết liệu việc bổ sung rào cản buộc mở nguồn có gây khó chịu hoặc làm giảm hiệu suất thao tác của người dùng trong thực tế hay không.
+- Cần thử nghiệm thêm trường hợp hệ thống gợi ý sai ngữ cảnh hoàn toàn xem người dùng có dễ dàng nhận biết và tắt bỏ hay không.

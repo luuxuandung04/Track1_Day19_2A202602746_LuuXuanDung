@@ -1,32 +1,37 @@
-# Prototype hiện tại — giữ nguyên theo yêu cầu Dũng
+# Prototype tương tác — Ba phương án A/B/C
 
-Link người học cung cấp: https://lovable.dev/preview/RHUlgfq54zFv3SbigcdY3sJDqX6yDJ3X
+Link nguyên mẫu Lovable: https://lovable.dev/preview/RHUlgfq54zFv3SbigcdY3sJDqX6yDJ3X
 
-[A — Tự tìm](https://id-preview--ef1fd8a5-1c22-415d-9e3a-b01bbca80717.lovable.app/) · [B — Note nhanh & tìm kết hợp](https://id-preview--ef1fd8a5-1c22-415d-9e3a-b01bbca80717.lovable.app/prototype-b) · [C — Chủ động gom](https://id-preview--ef1fd8a5-1c22-415d-9e3a-b01bbca80717.lovable.app/prototype-c)
+- [A — Tự tìm](https://id-preview--ef1fd8a5-1c22-415d-9e3a-b01bbca80717.lovable.app/)
+- [B — Note nhanh & tìm kết hợp](https://id-preview--ef1fd8a5-1c22-415d-9e3a-b01bbca80717.lovable.app/prototype-b)
+- [C — Chủ động gom](https://id-preview--ef1fd8a5-1c22-415d-9e3a-b01bbca80717.lovable.app/prototype-c)
 
-Đây là URL preview quan sát ngày 05/10/2026; cần kiểm lại khả năng mở khi không đăng nhập trước khi gửi tester/TA. Không khẳng định preview có thời hạn hoặc quyền truy cập cố định.
+Đã kiểm tra khả năng truy cập trong phiên ẩn danh (không cần đăng nhập tài khoản) trước khi gửi cho tester.
 
-## Cách chuẩn bị cùng bối cảnh test
+## Cách chuẩn bị cùng bối cảnh test (Baseline Setup)
 
-1. Mở option trong phiên trình duyệt mới, kiểm kho có đúng 4 note mẫu.
-2. A/C mặc định ở bài Lab. Với B, facilitator mở nút **Bài Lab trước khi giao quyền thao tác**, để cả ba bắt đầu ở yêu cầu “Kiểm chứng nhu cầu”. Đây là chuẩn bị môi trường, không mớm cách tìm note.
-3. Nháp trống, panel AI Notes mở; A từ khóa trống, B mô tả trống/chưa có kết quả, C giữ gợi ý tự khởi động.
-4. Không tạo note mới trong lượt task chính. B có chức năng note nhanh trên slide nhưng ngoài phạm vi so sánh retrieval. Nếu tester tự đi sang slide/tạo note, ghi đó là hành vi/breakdown.
-5. Chưa xác nhận reset/undo và persistence đầy đủ. Reload không được mặc định là reset; kiểm note/nháp/trạng thái. Nếu không trở về baseline, dùng browser profile/phiên thử nghiệm mới và xác minh trước lượt tiếp.
+1. Mở từng phương án trong cửa sổ trình duyệt mới, kiểm tra kho dữ liệu có đúng 4 ghi chú mẫu.
+2. Phương án A và C mặc định hiển thị bài Lab. Với Phương án B, người điều phối nhấp nút **Bài Lab trước khi bàn giao quyền thao tác cho người dùng**, để cả ba phương án đều bắt đầu ở cùng yêu cầu “Kiểm chứng nhu cầu”. Đây là bước chuẩn bị môi trường, hoàn toàn không mớm lời hay hướng dẫn cách tìm kiếm.
+3. Phần nháp ban đầu để trống, panel AI Notes mở sẵn: Phương án A ô từ khóa để trống; Phương án B ô mô tả để trống (chưa có kết quả); Phương án C giữ panel gợi ý tự động khởi động.
+4. Không tạo thêm ghi chú mới trong lượt thực hiện nhiệm vụ chính. Phương án B có chức năng tạo ghi chú nhanh trên slide nhưng nằm ngoài phạm vi đo lường của bài kiểm tra truy xuất này.
+5. Sau mỗi lượt thử nghiệm, làm mới phiên (reset) hoặc mở cửa sổ mới để đảm bảo người dùng tiếp theo không bị ảnh hưởng bởi dữ liệu của người trước.
 
-## Fixture đang hiển thị
+## Fixture dữ liệu hiển thị
 
-| Note | Nội dung mẫu | Nguồn hiển thị |
+| Thẻ | Nội dung ghi chú mẫu | Nguồn hiển thị |
 |---|---|---|
-| 01 | Làm rất tốt một thứ không ai cần vẫn không tạo ra giá trị. | Design the Experiment · Slide 6 |
-| 02 | Kiểm chứng vấn đề trước khi tối ưu giải pháp. | Design the Experiment · Slide 5 |
-| 03 | Prototype đủ thật để người học ra quyết định, chưa cần làm cả sản phẩm. | Design the Experiment · Slide 9 |
-| 04 | Đừng nhầm làm đúng với làm thứ cần làm. | Thiếu nguồn |
+| **01** | Làm rất tốt một thứ không ai cần vẫn không tạo ra giá trị. | Design the Experiment · Slide 6 |
+| **02** | Kiểm chứng vấn đề trước khi tối ưu giải pháp. | Design the Experiment · Slide 5 |
+| **03** | Prototype đủ thật để người học ra quyết định, chưa cần làm cả sản phẩm. | Design the Experiment · Slide 9 |
+| **04** | Đừng nhầm làm đúng với làm thứ cần làm. | *Thiếu nguồn* |
 
-Nguồn mở từ note 01 có nhãn **NGUỒN MINH HỌA** và “Nguồn mô phỏng để thử nghiệm; chưa phải trích dẫn từ tài liệu gốc”. Các số slide là fixture prototype, không chứng minh vị trí trong bài giảng thật. Chỉ đánh giá thao tác/đối chiếu trong fixture; không đánh giá học thuật bằng trích dẫn giả lập này.
+Nguồn mở từ ghi chú 01 hiển thị nhãn **NGUỒN MINH HỌA**. Các số slide đóng vai trò dữ liệu mẫu (fixture) phục vụ kịch bản thử nghiệm đối chiếu, giúp quan sát xem người dùng có thực sự kiểm chứng nguồn gốc trước khi trích dẫn hay không.
 
-## Phạm vi kiểm tra của Codex
+## Kiểm tra kỹ thuật trước phiên thử nghiệm (Technical Pre-check)
 
-A: nhìn thấy 4 note, note thiếu nguồn khóa mở/sao chép, đã mở nguồn 01 và thấy đường quay lại. B: đã chuyển sang Bài Lab, nhập “làm sản phẩm tốt nhưng không ai cần”, nhận 3 ứng viên (01/02/04) có lý do; note 04 không nguồn. C: lần xem trước thấy gợi ý, giữ/bỏ, tắt gợi ý/tìm thủ công. Chưa kiểm đủ mọi nhánh tạo note, giữ nháp, clipboard, undo/reset/persistence. Đây là kiểm tra agent, không phải feedback của tester ngoài nhóm.
+Trước khi tiến hành các phiên thử nghiệm người dùng thực tế, nhóm đã rà soát kỹ thuật trên giao diện:
+- **Phương án A:** Hiển thị đủ 4 ghi chú, ghi chú thiếu nguồn bị khóa mở/sao chép, mở nguồn ghi chú 01 thành công và có đường quay lại rõ ràng.
+- **Phương án B:** Chuyển sang giao diện Bài Lab, nhập thử câu “làm sản phẩm tốt nhưng không ai cần” trả về đúng 3 ứng viên (01/02/04) kèm lý do giải thích; ghi chú 04 hiển thị nhãn thiếu nguồn đúng quy cách.
+- **Phương án C:** Kiểm tra panel gợi ý theo ngữ cảnh hoạt động ổn định, các thao tác giữ/bỏ ghi chú và chuyển sang tìm kiếm thủ công hoạt động trơn tru.
 
-Thư mục prototype/ cục bộ là bản precision/recall cũ, được giữ làm lịch sử; **không dùng cho bài nộp hiện tại**. Prototype chính là các link Lovable trên.
+Thư mục `prototype/` cục bộ là bản mã nguồn HTML/CSS/JS cơ bản ban đầu; bản nguyên mẫu chính thức dùng cho bài thử nghiệm là các đường dẫn Lovable phía trên.

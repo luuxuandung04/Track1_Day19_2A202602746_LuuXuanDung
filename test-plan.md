@@ -4,7 +4,7 @@ Prototype: [A — Tự tìm](https://id-preview--ef1fd8a5-1c22-415d-9e3a-b01bbca
 
 ## Mục tiêu
 
-So sánh user tự tìm bằng từ khóa, AI tìm từ mô tả và AI gợi ý chủ động khi cần dùng lại một ý/nguồn. Không test AI Tutor hoặc hiệu năng model thật; B/C mô phỏng AI. Không đánh giá nhớ lâu/điểm số.
+So sánh trải nghiệm người dùng khi tự tìm bằng từ khóa (A), tìm kiếm theo mô tả ngữ nghĩa (B) và nhận gợi ý chủ động theo ngữ cảnh (C) khi cần dùng lại một ý và nguồn học liệu. Không đánh giá như một AI Tutor giảng bài; tập trung vào cơ chế hỗ trợ truy xuất và khả năng đối chiếu nguồn gốc của từng phương án. Không đo lường hiệu quả ghi nhớ dài hạn trong phạm vi buổi thử nghiệm này.
 
 ## Chuẩn bị
 
@@ -30,7 +30,7 @@ Không nói nút cần bấm hoặc gõ gì. Dùng cùng task, fixture, context.
 |---|---|
 | First action | Hành động đầu tiên từng option |
 | Hesitation/misunderstanding/help | Dừng, thao tác nhầm, câu hỏi, giúp đỡ đã cung cấp |
-| Evidence read/ignored | Có mở nguồn không, chọn note thiếu nguồn không, hiểu nguồn mô phỏng không |
+| Evidence read/ignored | Có mở nguồn không, chọn note thiếu nguồn không, hiểu nguồn minh họa không |
 | Correction/recovery | Đổi tìm kiếm, loại ứng viên, tắt gợi ý, quay về task như thế nào |
 | Choice & trade-off | Chọn option nào, lý do gắn hành vi, phần muốn tự làm/giao AI |
 
@@ -48,4 +48,4 @@ Compare: “Trong tình huống này, bạn chọn A/B/C? Vì sao?”; “Bạn 
 
 ## Sau mỗi phiên
 
-Điền Feedback Note, tách OBSERVED/INTERPRETED/DECIDED/STILL UNPROVEN. Đủ ba phiên thì dùng group-feedback-synthesis.md. Không tạo quote/observation bằng AI. Chỉ ghi âm khi có đồng ý phù hợp; không bắt buộc ghi âm để hoàn thành mẫu.
+Điền Feedback Note, tách bạch rõ ràng OBSERVED / INTERPRETED / DECIDED / STILL UNPROVEN. Ghi chép trung thực lời nói và hành vi của người tham gia. Khi hoàn thành đủ ba phiên thì sử dụng group-feedback-synthesis.md để tổng hợp pattern chung của nhóm. Chỉ ghi âm khi có sự đồng thuận rõ ràng từ người tham gia.

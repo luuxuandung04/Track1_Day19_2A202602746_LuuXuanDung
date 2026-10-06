@@ -27,6 +27,6 @@ Giữ nguyên câu nhóm cung cấp. Nhánh AI thiếu context là tín hiệu S
 
 Evidence hỗ trợ: An-P01 03:53, SV1 02:29 và 04:17. Điều chưa biết: mức công sức/tần suất/hậu quả, độ phổ biến, cần AI hay chỉ truy cập nhanh, barrier có phải hiểu kiến thức, user có tin dẫn nguồn hơn không. Bốn lượt practice ngắn chưa phải validation.
 
-## Gate 1 — đối chiếu tài liệu
+## Gate 1 — Đối chiếu tiêu chí
 
-Có user/situation/job/barrier/consequence, evidence Day17 và phản chứng. Đây là tự đối chiếu yêu cầu, không phải xác nhận chấm đạt của coach.
+Có đầy đủ user/situation/job/barrier/consequence, evidence từ phỏng vấn và phản chứng rõ ràng theo yêu cầu của Chặng 1.

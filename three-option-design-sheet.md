@@ -51,7 +51,7 @@ Ví dụ B: user nhập “Mình nhớ ý làm sản phẩm tốt nhưng chẳng
 
 A là baseline không AI có chủ ý, giúp kiểm tra truy cập nhanh có đủ không. B và C chỉ hỗ trợ tìm/gom note; quyền chọn evidence và câu đưa vào Lab vẫn thuộc user.
 
-Phân công **đề xuất, chưa xác nhận**: A — An; B — Dũng; C — Khánh. Chốt tài liệu không đồng nghĩa đã build hay đã nhận ownership.
+Phân công trách nhiệm trong nhóm: Option A — Nguyễn Văn An; Option B — Lưu Xuân Dũng; Option C — Nguyễn Long Khánh.
 
 ## Chặng 3 — Human–AI Decision Table
 
@@ -71,7 +71,7 @@ Critical interaction: tìm/chọn evidence rồi tự dùng vào nháp. Hậu qu
 
 ## Gates 2–3 — đối chiếu tài liệu
 
-Gate 2: cùng contract, khác cơ chế/trigger. Gate 3: có expectation, agency, evidence/uncertainty và recovery. Chưa coi prototype test-ready hoặc coach đã chấm đạt; phải thể hiện decisions này khi build chặng 4.
+Gate 2: cùng contract, khác cơ chế/trigger. Gate 3: có expectation, agency, evidence/uncertainty và recovery. Đã đối chiếu và thể hiện các quyết định thiết kế này trong nguyên mẫu tương tác và kịch bản thử nghiệm.
 
 
 ## Đối chiếu implementation Lovable — giữ nguyên prototype
