@@ -32,3 +32,7 @@ Dũng cung cấp bản tổng hợp nhóm có evidence An. Codex cập nhật hy
 ## Hoàn thiện theo prototype Lovable hiện tại
 
 Người học xác nhận hoàn thành build và cung cấp link Lovable. Codex giữ nguyên ứng dụng, kiểm A mở nguồn/B tìm mô tả và chuẩn bị B ở Lab; cập nhật fixture 4 note, nhãn nguồn/AI mô phỏng, link A/B/C, kịch bản test, mẫu An/Khánh và checklist. Đây là kiểm tra agent, không phải ba user feedback. Dũng chưa cung cấp prompt Lovable, ownership hoặc phần tự sửa; reflection cần dữ liệu cá nhân. Phần lịch sử prototype precision/recall giữ nguyên, không dùng làm bản chính.
+
+## 06/10/2026 — review mô phỏng
+
+Codex bổ sung ba persona giả định dựa trên thiết kế/giao diện đã đọc ngày 05/10, không thực hiện ba phiên người dùng thật, không tạo quote hoặc số đo. Đề xuất chuẩn hóa baseline Lab; giữ nguyên prototype. Không tự viết trải nghiệm/đóng góp cá nhân chưa được người học cung cấp.

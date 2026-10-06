@@ -59,3 +59,7 @@ Next Change sau test chưa chốt. Still Unproven: độ phổ biến/công sứ
 - [ ] Đóng góp/reflection cá nhân, link chia sẻ và tên repo đúng yêu cầu nộp.
 
 Repo cục bộ, chưa publish GitHub. Sources giữ cục bộ và được gitignore.
+
+## Review bổ sung do AI mô phỏng
+
+Xem [review ba persona và Next Change đề xuất](ai-simulated-review.md). Đây là phân tích giả định, không phải test ngoài nhóm; gate 5 và Next Change từ dữ liệu người thật vẫn chờ feedback.

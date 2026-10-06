@@ -23,3 +23,7 @@
 **OBSERVED:** chưa có. **INTERPRETED:** chưa có. **GROUP NEXT CHANGE:** chờ dữ liệu test. **Evidence dẫn tới:** chờ dữ liệu.
 
 **STILL UNPROVEN:** pain phổ biến/tần suất/hậu quả; AI có hơn truy cập nhanh; khả năng hiểu kiến thức; retrieval lâu dài; giá trị model thật. Ba feedback không chứng minh market demand/product value. Tất cả nguồn/AI prototype là minh họa, task lặp có ảnh hưởng học trước.
+
+## Review bổ sung do AI mô phỏng
+
+Xem [review ba persona và Next Change đề xuất](ai-simulated-review.md). Đây là phân tích giả định, không phải test ngoài nhóm; gate 5 và Next Change từ dữ liệu người thật vẫn chờ feedback.
